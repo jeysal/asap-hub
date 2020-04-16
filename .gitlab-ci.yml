@@ -1,8 +1,29 @@
-stages:
-  - build
+image: node:12
 
-apps:frontend:build:
+stages:
+  - check
+  - build
+  - test
+
+check-install:
   script:
-    - cd apps/frontend
+    - yarn install --immutable --immutable-cache --check-cache
+  stage: check
+check-constraints:
+  script:
+    - yarn constraints
+  stage: check
+check-format:
+  script:
+    - yarn run lint:format
+  stage: check
+
+build:
+  script:
     - yarn run build
   stage: build
+
+test:
+  script:
+    - yarn run test
+  stage: test
