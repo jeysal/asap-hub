@@ -1,0 +1,8 @@
+stages:
+  - build
+
+apps:frontend:build:
+  script:
+    - cd apps/frontend
+    - yarn run build
+  stage: build
