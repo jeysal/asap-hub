@@ -25,5 +25,8 @@ build:
 
 test:
   script:
-    - yarn run test
+    - yarn run test --coverage
+  artifacts:
+    paths:
+      - coverage
   stage: test
