@@ -21,6 +21,9 @@ check-format:
 build:
   script:
     - yarn run build
+  artifacts:
+    paths:
+      - packages/*/build
   stage: build
 
 test:
