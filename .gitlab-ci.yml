@@ -7,7 +7,7 @@ stages:
 
 check-install:
   script:
-    - yarn install --immutable --immutable-cache --check-cache
+    - yarn install --immutable --immutable-cache
   stage: check
 check-constraints:
   script:
