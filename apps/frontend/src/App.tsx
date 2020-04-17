@@ -1,5 +1,4 @@
 import React from 'react';
-import { LINK_TEXT } from '@asap-hub/example-lib';
 
 import logo from './logo.svg';
 import './App.css';
@@ -17,8 +16,7 @@ function App() {
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
-        >
-          {LINK_TEXT}
+        >React
         </a>
       </header>
     </div>

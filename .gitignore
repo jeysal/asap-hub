@@ -3,7 +3,7 @@
 # dependencies
 node_modules
 .yarn/*
-!.yarn/cache
+.pnp.js
 !.yarn/releases
 !.yarn/plugins
 
@@ -18,6 +18,9 @@ node_modules
 /packages/*/build
 
 *.tsbuildinfo
+
+# deploy
+.serverless
 
 # misc
 .DS_Store
